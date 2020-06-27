@@ -1,0 +1,20 @@
+server:
+  servlet:
+    context-path: /crud
+  #  port: 8081
+  tomcat:
+    uri-encoding: UTF-8
+
+spring:
+  messages:
+    basename: i18n.login
+  # 禁用缓存
+  thymeleaf:
+    cache: false
+  # 指定日期格式，原来默认是/，现在只能用-
+  mvc:
+    date-format: yyyy-MM-dd
+    # @ConditionalOnProperty限制了自动配置，默认false不开启配置，所以页面的put提交无法使用。
+    hiddenmethod:
+      filter:
+        enabled: true
