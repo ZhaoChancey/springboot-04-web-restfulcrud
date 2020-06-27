@@ -85,4 +85,9 @@ public class EmployeeController {
         employeeDao.delete(id);
         return "redirect:/emps";
     }
+
+    @DeleteMapping("/emp/ping")
+    public String ping() {
+        return "pong";
+    }
 }
