@@ -90,4 +90,9 @@ public class EmployeeController {
     public String ping() {
         return "pong";
     }
+
+    @DeleteMapping("/emp/ping2")
+    public String ping2() {
+        return "pong2";
+    }
 }
